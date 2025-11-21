@@ -1,0 +1,646 @@
+{
+  "mod_elements": [
+    {
+      "name": "IronBlastFurnaces",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_blast_furnaces",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Kiln",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "kiln",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/block/KilnBlock.java",
+          "src/main/resources/assets/ironblastfurnaces/blockstates/kiln.json",
+          "src/main/java/net/mcreator/ironblastfurnaces/block/entity/KilnBlockEntity.java",
+          "src/main/resources/data/ironblastfurnaces/loot_table/blocks/kiln.json",
+          "src/main/resources/assets/ironblastfurnaces/models/item/kiln.json",
+          "src/main/resources/assets/ironblastfurnaces/models/block/kiln.json"
+        ]
+      },
+      "path": "~/CopperTier"
+    },
+    {
+      "name": "KilnGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kiln_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/network/KilnGuiSlotMessage.java",
+          "src/main/java/net/mcreator/ironblastfurnaces/client/gui/KilnGuiScreen.java",
+          "src/main/java/net/mcreator/ironblastfurnaces/world/inventory/KilnGuiMenu.java"
+        ]
+      },
+      "path": "~/CopperTier"
+    },
+    {
+      "name": "KilnOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kiln_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/procedures/KilnOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/CopperTier"
+    },
+    {
+      "name": "FuelLevelIndicator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuel_level_indicator",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/procedures/FuelLevelIndicatorProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "KilnBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kiln_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/procedures/KilnBlockAddedProcedure.java"
+        ]
+      },
+      "path": "~/CopperTier"
+    },
+    {
+      "name": "ProgressLevelIndicator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_level_indicator",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/procedures/ProgressLevelIndicatorProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "KilnRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kiln_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/kiln_recipe.json",
+          "src/main/resources/data/ironblastfurnaces/recipe/kiln.json"
+        ]
+      },
+      "path": "~/recipes/crafting"
+    },
+    {
+      "name": "KilnSmelting",
+      "type": "jeirecipetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kiln_smelting",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/jei_recipes/KilnSmeltingRecipeCategory.java",
+          "src/main/java/net/mcreator/ironblastfurnaces/jei_recipes/KilnSmeltingRecipe.java"
+        ]
+      },
+      "path": "~/recipes/types"
+    },
+    {
+      "name": "KilnCopperIngot",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_ingot_from_raw_copper_in_kiln",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/copper_ingot_from_raw_copper_in_kiln.json"
+        ]
+      },
+      "path": "~/recipes/kiln"
+    },
+    {
+      "name": "ReleaseStoredExp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "release_stored_exp",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/procedures/ReleaseStoredExpProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "KilnCopperIngotOre",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_ingot_from_copper_ore_in_kiln",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/copper_ingot_from_copper_ore_in_kiln.json"
+        ]
+      },
+      "path": "~/recipes/kiln"
+    },
+    {
+      "name": "KilnCopperIngotOreDeepslate",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_ingot_from_deepslate_copper_ore_in_kiln",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/copper_ingot_from_deepslate_copper_ore_in_kiln.json"
+        ]
+      },
+      "path": "~/recipes/kiln"
+    },
+    {
+      "name": "CopperPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ironblastfurnaces/models/item/copper_pickaxe.json",
+          "src/main/java/net/mcreator/ironblastfurnaces/item/CopperPickaxeItem.java"
+        ]
+      },
+      "path": "~/CopperTier"
+    },
+    {
+      "name": "CopperIngotFromSmeltingRawCopper",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_ingot_from_smelting_raw_copper",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/copper_ingot_from_smelting_raw_copper.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/copper_ingot_from_smelting_raw_copper.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/smelting"
+    },
+    {
+      "name": "CopperIngotFromSmeltingCopperOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_ingot_from_smelting_copper_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/copper_ingot_from_smelting_copper_ore.json",
+          "src/main/resources/data/minecraft/recipe/copper_ingot_from_smelting_copper_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/smelting"
+    },
+    {
+      "name": "CopperIngotFromSmeltingDeepslateCopperOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_ingot_from_smelting_deepslate_copper_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/copper_ingot_from_smelting_deepslate_copper_ore.json",
+          "src/main/resources/data/minecraft/recipe/copper_ingot_from_smelting_deepslate_copper_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/smelting"
+    },
+    {
+      "name": "IronIngotFromSmeltingRawIron",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "iron_ingot_from_smelting_raw_iron",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/iron_ingot_from_smelting_raw_iron.json",
+          "src/main/resources/data/minecraft/recipe/iron_ingot_from_smelting_raw_iron.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/smelting"
+    },
+    {
+      "name": "IronIngotFromSmeltingIronOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "iron_ingot_from_smelting_iron_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/iron_ingot_from_smelting_iron_ore.json",
+          "src/main/resources/data/minecraft/recipe/iron_ingot_from_smelting_iron_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/smelting"
+    },
+    {
+      "name": "IronIngotFromSmeltingDeepslateIronOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "iron_ingot_from_smelting_deepslate_iron_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/iron_ingot_from_smelting_deepslate_iron_ore.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/iron_ingot_from_smelting_deepslate_iron_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/smelting"
+    },
+    {
+      "name": "IronNuggetFromSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "iron_nugget_from_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/iron_nugget_from_smelting.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/smelting"
+    },
+    {
+      "name": "GoldIngotFromSmeltingRawGold",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_ingot_from_smelting_raw_gold",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/gold_ingot_from_smelting_raw_gold.json",
+          "src/main/resources/data/minecraft/recipe/gold_ingot_from_smelting_raw_gold.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/smelting"
+    },
+    {
+      "name": "GoldIngotFromSmeltingGoldOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_ingot_from_smelting_gold_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/gold_ingot_from_smelting_gold_ore.json",
+          "src/main/resources/data/minecraft/recipe/gold_ingot_from_smelting_gold_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/smelting"
+    },
+    {
+      "name": "GoldIngotFromSmeltingDeepslateGoldOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_ingot_from_smelting_deepslate_gold_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/gold_ingot_from_smelting_deepslate_gold_ore.json",
+          "src/main/resources/data/minecraft/recipe/gold_ingot_from_smelting_deepslate_gold_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/smelting"
+    },
+    {
+      "name": "GoldNuggetFromSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_nugget_from_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/gold_nugget_from_smelting.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/smelting"
+    },
+    {
+      "name": "DiamondFromSmeltingDiamondOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "diamond_from_smelting_diamond_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/diamond_from_smelting_diamond_ore.json",
+          "src/main/resources/data/minecraft/recipe/diamond_from_smelting_diamond_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/smelting"
+    },
+    {
+      "name": "DiamondFromSmeltingDeepslateDiamondOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "diamond_from_smelting_deepslate_diamond_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/diamond_from_smelting_deepslate_diamond_ore.json",
+          "src/main/resources/data/minecraft/recipe/diamond_from_smelting_deepslate_diamond_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/smelting"
+    },
+    {
+      "name": "BlastFurnace",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blast_furnace",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/blast_furnace.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "GoldIngotFromSmeltingNetherGoldOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_ingot_from_smelting_nether_gold_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/gold_ingot_from_smelting_nether_gold_ore.json",
+          "src/main/resources/data/minecraft/recipe/gold_ingot_from_smelting_nether_gold_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/smelting"
+    },
+    {
+      "name": "NetheriteScrap",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "netherite_scrap",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/netherite_scrap.json",
+          "src/main/resources/data/minecraft/recipe/netherite_scrap.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/smelting"
+    },
+    {
+      "name": "CopperIngotFromBlastingRawCopper",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_ingot_from_blasting_raw_copper",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/copper_ingot_from_blasting_raw_copper.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/blasting"
+    },
+    {
+      "name": "CopperIngotFromBlastingCopperOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_ingot_from_blasting_copper_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/copper_ingot_from_blasting_copper_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/blasting"
+    },
+    {
+      "name": "CopperIngotFromBlastingDeepslateCopperOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_ingot_from_blasting_deepslate_copper_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/copper_ingot_from_blasting_deepslate_copper_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/blasting"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:CopperPickaxe"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.iron_blast_furnaces.iron_blast_furnaces": "Iron Blast Furnaces",
+      "block.iron_blast_furnaces.kiln": "Kiln",
+      "gui.iron_blast_furnaces.kiln_gui.label_kiln": "Kiln",
+      "item_group.ironblastfurnaces.iron_blast_furnaces": "Iron Blast Furnaces",
+      "block.ironblastfurnaces.kiln": "Kiln",
+      "gui.ironblastfurnaces.kiln_gui.label_kiln": "Kiln",
+      "item.ironblastfurnaces.copper_pickaxe": "Copper Pickaxe"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModMenus.java",
+      "src/main/java/net/mcreator/ironblastfurnaces/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModScreens.java",
+      "src/main/resources/data/ironblastfurnaces/tags/item/jei_empty_tag.json",
+      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModJeiPlugin.java",
+      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModRecipeTypes.java",
+      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModBrewingRecipes.java",
+      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModBlocks.java",
+      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModBlockEntities.java",
+      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModItems.java",
+      "src/main/java/net/mcreator/ironblastfurnaces/IronblastfurnacesMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModTabs.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "CopperTier",
+        "children": []
+      },
+      {
+        "name": "recipes",
+        "children": [
+          {
+            "name": "types",
+            "children": []
+          },
+          {
+            "name": "kiln",
+            "children": []
+          },
+          {
+            "name": "vanilla",
+            "children": [
+              {
+                "name": "crafting",
+                "children": []
+              },
+              {
+                "name": "smelting",
+                "children": []
+              },
+              {
+                "name": "blasting",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "crafting",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "ironblastfurnaces",
+    "modName": "Iron Blast Furnaces",
+    "version": "1.0.0",
+    "description": "Adds Tiered Furnaces",
+    "author": "xFoem",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "jei"
+    ],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.ironblastfurnaces"
+  },
+  "mcreatorVersion": 202500345720
+}

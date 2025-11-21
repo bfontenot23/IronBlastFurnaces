@@ -1,0 +1,23 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 1,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "Items.IRON_SHOVEL"
+    },
+    "smeltingReturnStack": {
+      "value": "Items.IRON_NUGGET"
+    },
+    "name": "iron_nugget_from_smelting",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ironblastfurnaces:block/kiln_side",
+    "up": "ironblastfurnaces:block/kiln_side",
+    "north": "ironblastfurnaces:block/kiln_front",
+    "east": "ironblastfurnaces:block/kiln_side",
+    "south": "ironblastfurnaces:block/kiln_side",
+    "west": "ironblastfurnaces:block/kiln_side",
+    "particle": "ironblastfurnaces:block/kiln_side"
+  },
+  "render_type": "solid"
+}

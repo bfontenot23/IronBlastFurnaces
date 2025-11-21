@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "b b",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:brick"
+    },
+    "b": {
+      "item": "minecraft:mud_bricks"
+    }
+  },
+  "result": {
+    "id": "ironblastfurnaces:kiln",
+    "count": 1
+  }
+}

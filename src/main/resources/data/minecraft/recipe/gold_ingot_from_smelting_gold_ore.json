@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 0,
+  "cookingtime": 1,
+  "ingredient": {
+    "item": "minecraft:gold_ore"
+  },
+  "result": {
+    "id": "minecraft:air"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "ironblastfurnaces:kiln_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:raw_copper"
+    }
+  ],
+  "strings": [
+    "200",
+    "0.7"
+  ],
+  "outputs": [
+    {
+      "id": "minecraft:copper_ingot",
+      "count": 1
+    }
+  ]
+}

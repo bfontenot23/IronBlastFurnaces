@@ -1,0 +1,21 @@
+{
+  "workspacePanelIconSize": "LIST",
+  "workspacePanelSortType": "CREATED",
+  "workspacePanelSortAscending": true,
+  "projectBrowserSplitPos": 210,
+  "projectBrowserState": {
+    "expandedPaths": [
+      "[, Iron Blast Furnaces]",
+      "[, Iron Blast Furnaces, Resources (Gradle)]",
+      "[, Iron Blast Furnaces, Resources (Gradle), /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/assets]",
+      "[, Iron Blast Furnaces, Resources (Gradle), /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/assets, /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/assets/ironblastfurnaces]",
+      "[, Iron Blast Furnaces, Resources (Gradle), /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/assets, /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/assets/ironblastfurnaces, /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/assets/ironblastfurnaces/blockstates]",
+      "[, Iron Blast Furnaces, Resources (Gradle), /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/data]",
+      "[, Iron Blast Furnaces, Resources (Gradle), /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/data, /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/data/ironblastfurnaces]",
+      "[, Iron Blast Furnaces, Resources (Gradle), /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/data, /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/data/ironblastfurnaces, /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/data/ironblastfurnaces/advancement]",
+      "[, Iron Blast Furnaces, Resources (Gradle), /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/data, /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/data/ironblastfurnaces, /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/data/ironblastfurnaces/advancement, /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/data/ironblastfurnaces/advancement/recipes]",
+      "[, Iron Blast Furnaces, Resources (Gradle), /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/data, /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/data/minecraft]",
+      "[, Iron Blast Furnaces, Resources (Gradle), /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/data, /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/data/minecraft, /Users/beaufontenot/MCreatorWorkspaces/iron_blast_furnaces/src/main/resources/data/minecraft/recipe]"
+    ]
+  }
+}

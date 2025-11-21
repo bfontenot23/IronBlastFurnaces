@@ -1,0 +1,19 @@
+# MCreator project files to ignore
+.gradle/
+build/
+bin/
+run/
+.idea/
+.project
+.classpath
+.settings/
+*.log
+*.zip
+*.jar
+*.iml
+*.iws
+*.ipr
+*.bak
+*.swp
+temp/
+export/

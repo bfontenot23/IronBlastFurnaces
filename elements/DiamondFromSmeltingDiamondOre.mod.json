@@ -1,0 +1,27 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "Blocks.COPPER_ORE"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 1,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "Blocks.COPPER_ORE"
+    },
+    "smeltingReturnStack": {
+      "value": "Items.COPPER_INGOT"
+    },
+    "name": "diamond_from_smelting_diamond_ore",
+    "namespace": "minecraft"
+  }
+}

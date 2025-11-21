@@ -1,0 +1,23 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 1,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "Blocks.COPPER_ORE"
+    },
+    "blastingReturnStack": {
+      "value": "Items.COPPER_INGOT"
+    },
+    "name": "copper_ingot_from_blasting_copper_ore",
+    "namespace": "minecraft"
+  }
+}

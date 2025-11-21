@@ -1,0 +1,27 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "kiln_smelting",
+    "ingredients": [
+      {
+        "value": "Blocks.DEEPSLATE_COPPER_ORE"
+      }
+    ],
+    "integers": [],
+    "strings": [
+      "200",
+      "0.7"
+    ],
+    "recipetype": "KilnSmelting",
+    "results": [
+      {
+        "value": "Items.COPPER_INGOT"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}
