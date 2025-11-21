@@ -564,20 +564,20 @@
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModScreens.java",
       "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModMenus.java",
       "src/main/java/net/mcreator/ironblastfurnaces/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModScreens.java",
       "src/main/resources/data/ironblastfurnaces/tags/item/jei_empty_tag.json",
-      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModJeiPlugin.java",
       "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModRecipeTypes.java",
+      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModJeiPlugin.java",
       "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModBrewingRecipes.java",
       "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModBlocks.java",
       "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModBlockEntities.java",
       "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModItems.java",
-      "src/main/java/net/mcreator/ironblastfurnaces/IronblastfurnacesMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModTabs.java"
+      "src/main/java/net/mcreator/ironblastfurnaces/IronblastfurnacesMod.java",
+      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {

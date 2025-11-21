@@ -7,6 +7,8 @@ run/
 .project
 .classpath
 .settings/
+.eclipse/
+.mcreator/
 *.log
 *.zip
 *.jar
