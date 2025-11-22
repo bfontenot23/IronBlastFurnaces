@@ -5,5 +5,9 @@
   "item_group.ironblastfurnaces.iron_blast_furnaces": "Iron Blast Furnaces",
   "block.ironblastfurnaces.kiln": "Kiln",
   "gui.ironblastfurnaces.kiln_gui.label_kiln": "Kiln",
-  "item.ironblastfurnaces.copper_pickaxe": "Copper Pickaxe"
+  "item.ironblastfurnaces.copper_pickaxe": "Copper Pickaxe",
+  "item.ironblastfurnaces.copper_boots": "Copper Boots",
+  "item.ironblastfurnaces.copper_helmet": "Copper Helmet",
+  "item.ironblastfurnaces.copper_leggings": "Copper Leggings",
+  "item.ironblastfurnaces.copper_chestplate": "Copper Chestplate"
 }

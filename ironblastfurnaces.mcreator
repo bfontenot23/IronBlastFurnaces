@@ -276,8 +276,8 @@
       "registry_name": "copper_pickaxe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ironblastfurnaces/models/item/copper_pickaxe.json",
-          "src/main/java/net/mcreator/ironblastfurnaces/item/CopperPickaxeItem.java"
+          "src/main/java/net/mcreator/ironblastfurnaces/item/CopperPickaxeItem.java",
+          "src/main/resources/assets/ironblastfurnaces/models/item/copper_pickaxe.json"
         ]
       },
       "path": "~/CopperTier"
@@ -541,6 +541,99 @@
         ]
       },
       "path": "~/recipes/vanilla/blasting"
+    },
+    {
+      "name": "StoneCantBreakIron",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_cant_break_iron",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/procedures/StoneCantBreakIronProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "IronCantBreakDiamond",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_cant_break_diamond",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/procedures/IronCantBreakDiamondProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Copper",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ironblastfurnaces/models/item/copper_boots.json",
+          "src/main/java/net/mcreator/ironblastfurnaces/item/CopperItem.java",
+          "src/main/resources/assets/ironblastfurnaces/models/item/copper_chestplate.json",
+          "src/main/resources/assets/ironblastfurnaces/models/item/copper_leggings.json",
+          "src/main/resources/assets/ironblastfurnaces/models/item/copper_helmet.json"
+        ]
+      },
+      "path": "~/CopperTier"
     }
   ],
   "variable_elements": [],
@@ -548,6 +641,18 @@
   "tag_elements": {
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:CopperPickaxe"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:Copper.helmet"
+    ],
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:Copper.body"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:Copper.legs"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:Copper.boots"
     ]
   },
   "tab_element_order": {},
@@ -559,7 +664,11 @@
       "item_group.ironblastfurnaces.iron_blast_furnaces": "Iron Blast Furnaces",
       "block.ironblastfurnaces.kiln": "Kiln",
       "gui.ironblastfurnaces.kiln_gui.label_kiln": "Kiln",
-      "item.ironblastfurnaces.copper_pickaxe": "Copper Pickaxe"
+      "item.ironblastfurnaces.copper_pickaxe": "Copper Pickaxe",
+      "item.ironblastfurnaces.copper_boots": "Copper Boots",
+      "item.ironblastfurnaces.copper_helmet": "Copper Helmet",
+      "item.ironblastfurnaces.copper_leggings": "Copper Leggings",
+      "item.ironblastfurnaces.copper_chestplate": "Copper Chestplate"
     }
   },
   "metadata": {
