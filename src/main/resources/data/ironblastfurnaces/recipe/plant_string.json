@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ironblastfurnaces:plant_fiber"
+    },
+    {
+      "item": "ironblastfurnaces:plant_fiber"
+    },
+    {
+      "item": "ironblastfurnaces:plant_fiber"
+    }
+  ],
+  "result": {
+    "id": "ironblastfurnaces:plant_string",
+    "count": 1
+  }
+}

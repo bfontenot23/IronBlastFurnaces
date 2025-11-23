@@ -14,16 +14,16 @@
       "name": "Kiln",
       "type": "block",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "kiln",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ironblastfurnaces/block/KilnBlock.java",
-          "src/main/resources/assets/ironblastfurnaces/blockstates/kiln.json",
-          "src/main/java/net/mcreator/ironblastfurnaces/block/entity/KilnBlockEntity.java",
-          "src/main/resources/data/ironblastfurnaces/loot_table/blocks/kiln.json",
+          "src/main/resources/assets/ironblastfurnaces/models/block/kiln.json",
           "src/main/resources/assets/ironblastfurnaces/models/item/kiln.json",
-          "src/main/resources/assets/ironblastfurnaces/models/block/kiln.json"
+          "src/main/java/net/mcreator/ironblastfurnaces/block/entity/KilnBlockEntity.java",
+          "src/main/java/net/mcreator/ironblastfurnaces/block/KilnBlock.java",
+          "src/main/resources/data/ironblastfurnaces/loot_table/blocks/kiln.json",
+          "src/main/resources/assets/ironblastfurnaces/blockstates/kiln.json"
         ]
       },
       "path": "~/CopperTier"
@@ -634,6 +634,707 @@
         ]
       },
       "path": "~/CopperTier"
+    },
+    {
+      "name": "FlintShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flint_shard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ironblastfurnaces/models/item/flint_shard.json",
+          "src/main/java/net/mcreator/ironblastfurnaces/item/FlintShardItem.java"
+        ]
+      },
+      "path": "~/FlintTier"
+    },
+    {
+      "name": "CrackFlintOnStone",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crack_flint_on_stone",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/procedures/CrackFlintOnStoneProcedure.java"
+        ]
+      },
+      "path": "~/FlintTier"
+    },
+    {
+      "name": "PlantFiber",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plant_fiber",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/item/PlantFiberItem.java",
+          "src/main/resources/assets/ironblastfurnaces/models/item/plant_fiber.json"
+        ]
+      },
+      "path": "~/FlintTier"
+    },
+    {
+      "name": "PlantString",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plant_string",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/item/PlantStringItem.java",
+          "src/main/resources/assets/ironblastfurnaces/models/item/plant_string.json"
+        ]
+      },
+      "path": "~/FlintTier"
+    },
+    {
+      "name": "FlintKnifeBlockDestroyedWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flint_knife_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/procedures/FlintKnifeBlockDestroyedWithToolProcedure.java"
+        ]
+      },
+      "path": "~/FlintTier"
+    },
+    {
+      "name": "FlintKnife",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flint_knife",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ironblastfurnaces/models/item/flint_knife.json",
+          "src/main/java/net/mcreator/ironblastfurnaces/item/FlintKnifeItem.java"
+        ]
+      },
+      "path": "~/FlintTier"
+    },
+    {
+      "name": "FlintKnifeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flint_knife_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/flint_knife.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/flint_knife_recipe.json"
+        ]
+      },
+      "path": "~/recipes/crafting"
+    },
+    {
+      "name": "PlantStringRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plant_string_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/plant_string_recipe.json",
+          "src/main/resources/data/ironblastfurnaces/recipe/plant_string.json"
+        ]
+      },
+      "path": "~/recipes/crafting"
+    },
+    {
+      "name": "PlantFiberJEI",
+      "type": "jeiinformation",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plant_fiber_jei",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/FlintTier"
+    },
+    {
+      "name": "WoodenPickaxe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/wooden_pickaxe.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/wooden_pickaxe.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "WoodenPickaxeUsingPlantString",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_pickaxe_using_plant_string",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/wooden_pickaxe_using_plant_string.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/wooden_pickaxe_using_plant_string.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "WoodenAxe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/wooden_axe.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/wooden_axe.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "WoodenAxeUsingPlantString",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_axe_using_plant_string",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/wooden_axe_using_plant_string.json",
+          "src/main/resources/data/minecraft/recipe/wooden_axe_using_plant_string.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "WoodenHoe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/wooden_hoe.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/wooden_hoe.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "WoodenHoeUsingPlantString",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_hoe_using_plant_string",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/wooden_hoe_using_plant_string.json",
+          "src/main/resources/data/minecraft/recipe/wooden_hoe_using_plant_string.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "WoodenShovel",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/wooden_shovel.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/wooden_shovel.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "WoodenShovelUsingPlantString",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_shovel_using_plant_string",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/wooden_shovel_using_plant_string.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/wooden_shovel_using_plant_string.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "WoodenSword",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/wooden_sword.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/wooden_sword.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "WoodenSwordUsingPlantString",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_sword_using_plant_string",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/wooden_sword_using_plant_string.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/wooden_sword_using_plant_string.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "CraftingTable",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafting_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/crafting_table.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/crafting_table.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "StonePickaxe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/stone_pickaxe.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/stone_pickaxe.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "StonePickaxeUsingPlantString",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_pickaxe_using_plant_string",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/stone_pickaxe_using_plant_string.json",
+          "src/main/resources/data/minecraft/recipe/stone_pickaxe_using_plant_string.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "StoneAxe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/stone_axe.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/stone_axe.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "StoneAxeUsingPlantString",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_axe_using_plant_string",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/stone_axe_using_plant_string.json",
+          "src/main/resources/data/minecraft/recipe/stone_axe_using_plant_string.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "StoneHoe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/stone_hoe.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/stone_hoe.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "StoneHoeUsingPlantString",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_hoe_using_plant_string",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/stone_hoe_using_plant_string.json",
+          "src/main/resources/data/minecraft/recipe/stone_hoe_using_plant_string.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "StoneSword",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/stone_sword.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/stone_sword.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "StoneSwordUsingPlantString",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_sword_using_plant_string",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/stone_sword_using_plant_string.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/stone_sword_using_plant_string.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "StoneShovel",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/stone_shovel.json",
+          "src/main/resources/data/minecraft/recipe/stone_shovel.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "StoneShovelUsingPlantString",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_shovel_using_plant_string",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/stone_shovel_using_plant_string.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/stone_shovel_using_plant_string.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/crafting"
+    },
+    {
+      "name": "CopperSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/item/CopperSwordItem.java",
+          "src/main/resources/assets/ironblastfurnaces/models/item/copper_sword.json"
+        ]
+      },
+      "path": "~/CopperTier"
+    },
+    {
+      "name": "CopperAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ironblastfurnaces/models/item/copper_axe.json",
+          "src/main/java/net/mcreator/ironblastfurnaces/item/CopperAxeItem.java"
+        ]
+      },
+      "path": "~/CopperTier"
+    },
+    {
+      "name": "CopperHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/item/CopperHoeItem.java",
+          "src/main/resources/assets/ironblastfurnaces/models/item/copper_hoe.json"
+        ]
+      },
+      "path": "~/CopperTier"
+    },
+    {
+      "name": "CopperShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ironblastfurnaces/models/item/copper_shovel.json",
+          "src/main/java/net/mcreator/ironblastfurnaces/item/CopperShovelItem.java"
+        ]
+      },
+      "path": "~/CopperTier"
+    },
+    {
+      "name": "CopperPickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/copper_pickaxe.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/copper_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/recipes/crafting"
+    },
+    {
+      "name": "CopperAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/copper_axe_recipe.json",
+          "src/main/resources/data/ironblastfurnaces/recipe/copper_axe.json"
+        ]
+      },
+      "path": "~/recipes/crafting"
+    },
+    {
+      "name": "CopperSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/copper_sword_recipe.json",
+          "src/main/resources/data/ironblastfurnaces/recipe/copper_sword.json"
+        ]
+      },
+      "path": "~/recipes/crafting"
+    },
+    {
+      "name": "CopperShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/copper_shovel.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/copper_shovel_recipe.json"
+        ]
+      },
+      "path": "~/recipes/crafting"
+    },
+    {
+      "name": "CopperHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/copper_hoe.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/copper_hoe_recipe.json"
+        ]
+      },
+      "path": "~/recipes/crafting"
+    },
+    {
+      "name": "CopperHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/copper_helmet.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/copper_helmet_recipe.json"
+        ]
+      },
+      "path": "~/recipes/crafting"
+    },
+    {
+      "name": "CopperChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/copper_chestplate_recipe.json",
+          "src/main/resources/data/ironblastfurnaces/recipe/copper_chestplate.json"
+        ]
+      },
+      "path": "~/recipes/crafting"
+    },
+    {
+      "name": "CopperLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/copper_leggings_recipe.json",
+          "src/main/resources/data/ironblastfurnaces/recipe/copper_leggings.json"
+        ]
+      },
+      "path": "~/recipes/crafting"
+    },
+    {
+      "name": "CopperBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/copper_boots.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/copper_boots_recipe.json"
+        ]
+      },
+      "path": "~/recipes/crafting"
+    },
+    {
+      "name": "KilnStone",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kiln_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/kiln_stone.json"
+        ]
+      },
+      "path": "~/recipes/kiln"
+    },
+    {
+      "name": "KilnSmoothStone",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kiln_smooth_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/kiln_smooth_stone.json"
+        ]
+      },
+      "path": "~/recipes/kiln"
+    },
+    {
+      "name": "KilnBrick",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kiln_brick",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/kiln_brick.json"
+        ]
+      },
+      "path": "~/recipes/kiln"
+    },
+    {
+      "name": "KilnGlass",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kiln_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/kiln_glass.json"
+        ]
+      },
+      "path": "~/recipes/kiln"
     }
   ],
   "variable_elements": [],
@@ -653,6 +1354,22 @@
     ],
     "ITEMS:minecraft:foot_armor": [
       "~CUSTOM:Copper.boots"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:CopperSword",
+      "~CUSTOM:FlintKnife"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:CopperAxe"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~CUSTOM:CopperHoe"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:CopperShovel"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Kiln"
     ]
   },
   "tab_element_order": {},
@@ -668,7 +1385,16 @@
       "item.ironblastfurnaces.copper_boots": "Copper Boots",
       "item.ironblastfurnaces.copper_helmet": "Copper Helmet",
       "item.ironblastfurnaces.copper_leggings": "Copper Leggings",
-      "item.ironblastfurnaces.copper_chestplate": "Copper Chestplate"
+      "item.ironblastfurnaces.copper_chestplate": "Copper Chestplate",
+      "item.ironblastfurnaces.flint_shard": "Flint Shard",
+      "item.ironblastfurnaces.plant_fiber": "Plant Fiber",
+      "item.ironblastfurnaces.plant_string": "Plant String",
+      "item.ironblastfurnaces.flint_knife": "Flint Knife",
+      "jei.ironblastfurnaces.plant_fiber_jei": "Obtainable by breaking grass with a flint knife.",
+      "item.ironblastfurnaces.copper_sword": "Copper Sword",
+      "item.ironblastfurnaces.copper_axe": "Copper Axe",
+      "item.ironblastfurnaces.copper_hoe": "Copper Hoe",
+      "item.ironblastfurnaces.copper_shovel": "Copper Shovel"
     }
   },
   "metadata": {
@@ -676,6 +1402,7 @@
       "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModScreens.java",
       "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModMenus.java",
       "src/main/java/net/mcreator/ironblastfurnaces/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModJeiInformation.java",
       "src/main/resources/data/ironblastfurnaces/tags/item/jei_empty_tag.json",
       "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModRecipeTypes.java",
       "src/main/java/net/mcreator/ironblastfurnaces/init/IronblastfurnacesModJeiPlugin.java",
@@ -729,6 +1456,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "FlintTier",
+        "children": []
       }
     ]
   },

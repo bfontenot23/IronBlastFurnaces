@@ -1,0 +1,18 @@
+{
+  "type": "ironblastfurnaces:kiln_smelting",
+  "ingredients": [
+    {
+      "tag": "minecraft:sand"
+    }
+  ],
+  "strings": [
+    "100",
+    "0.1"
+  ],
+  "outputs": [
+    {
+      "id": "minecraft:glass",
+      "count": 1
+    }
+  ]
+}

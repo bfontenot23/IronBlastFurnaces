@@ -1,0 +1,14 @@
+{
+  "_fv": 79,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:PlantFiber"
+      }
+    ],
+    "information": [
+      "Obtainable by breaking grass with a flint knife."
+    ]
+  }
+}

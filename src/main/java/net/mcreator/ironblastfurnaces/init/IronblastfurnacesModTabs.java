@@ -24,5 +24,12 @@ public class IronblastfurnacesModTabs {
 				tabData.accept(IronblastfurnacesModItems.COPPER_CHESTPLATE.get());
 				tabData.accept(IronblastfurnacesModItems.COPPER_LEGGINGS.get());
 				tabData.accept(IronblastfurnacesModItems.COPPER_BOOTS.get());
+				tabData.accept(IronblastfurnacesModItems.FLINT_SHARD.get());
+				tabData.accept(IronblastfurnacesModItems.PLANT_FIBER.get());
+				tabData.accept(IronblastfurnacesModItems.FLINT_KNIFE.get());
+				tabData.accept(IronblastfurnacesModItems.COPPER_SWORD.get());
+				tabData.accept(IronblastfurnacesModItems.COPPER_AXE.get());
+				tabData.accept(IronblastfurnacesModItems.COPPER_HOE.get());
+				tabData.accept(IronblastfurnacesModItems.COPPER_SHOVEL.get());
 			}).build());
 }

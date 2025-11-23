@@ -1,34 +1,19 @@
 {
   "variants": {
-    "facing=north,kiln_lit=false": {
+    "facing=north": {
       "model": "ironblastfurnaces:block/kiln"
     },
-    "facing=east,kiln_lit=false": {
+    "facing=east": {
       "model": "ironblastfurnaces:block/kiln",
       "y": 90
     },
-    "facing=south,kiln_lit=false": {
+    "facing=south": {
       "model": "ironblastfurnaces:block/kiln",
       "y": 180
     },
-    "facing=west,kiln_lit=false": {
+    "facing=west": {
       "model": "ironblastfurnaces:block/kiln",
       "y": 270
-    },
-    "facing=north,kiln_lit=true": {
-      "model": "ironblastfurnaces:block/kiln_lit"
-    },
-    "facing=east,kiln_lit=true": {
-      "model": "ironblastfurnaces:block/kiln_lit",
-      "y": 90
-    },
-    "facing=south,kiln_lit=true": {
-      "model": "ironblastfurnaces:block/kiln_lit",
-      "y": 180
-    },
-    "facing=west,kiln_lit=true": {
-      "model": "ironblastfurnaces:block/kiln_lit",
-      "y": 270
-    }   
+    }
   }
 }

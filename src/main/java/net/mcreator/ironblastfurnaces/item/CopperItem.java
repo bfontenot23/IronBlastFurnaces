@@ -33,7 +33,7 @@ public abstract class CopperItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 4);
 				map.put(ArmorItem.Type.HELMET, 1);
 				map.put(ArmorItem.Type.BODY, 4);
-			}), 10, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_iron")), () -> Ingredient.of(new ItemStack(Items.COPPER_INGOT)),
+			}), 13, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_iron")), () -> Ingredient.of(new ItemStack(Items.COPPER_INGOT)),
 					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("ironblastfurnaces:copper"))), 0f, 0f);
 			registerHelper.register(ResourceLocation.parse("ironblastfurnaces:copper"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);

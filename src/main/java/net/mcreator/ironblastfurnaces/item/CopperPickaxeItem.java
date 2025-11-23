@@ -30,7 +30,7 @@ public class CopperPickaxeItem extends PickaxeItem {
 
 		@Override
 		public int getEnchantmentValue() {
-			return 10;
+			return 13;
 		}
 
 		@Override

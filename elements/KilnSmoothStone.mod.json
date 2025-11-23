@@ -1,0 +1,27 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "kiln_smelting",
+    "ingredients": [
+      {
+        "value": "Blocks.STONE#0"
+      }
+    ],
+    "integers": [],
+    "strings": [
+      "100",
+      "0.1"
+    ],
+    "recipetype": "KilnSmelting",
+    "results": [
+      {
+        "value": "Blocks.SMOOTH_STONE"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

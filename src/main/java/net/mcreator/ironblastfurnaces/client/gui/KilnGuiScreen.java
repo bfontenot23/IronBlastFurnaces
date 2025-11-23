@@ -70,7 +70,7 @@ public class KilnGuiScreen extends AbstractContainerScreen<KilnGuiMenu> implemen
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.ironblastfurnaces.kiln_gui.label_kiln"), 77, 5, -13421773, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.ironblastfurnaces.kiln_gui.label_kiln"), 77, 6, -13421773, false);
 	}
 
 	@Override

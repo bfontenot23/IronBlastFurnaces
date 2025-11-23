@@ -40,7 +40,7 @@ public class KilnBlock extends Block implements EntityBlock {
 	public static final BooleanProperty KILN_LIT = BooleanProperty.create("kiln_lit");
 
 	public KilnBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.MUD_BRICKS).strength(1f, 3f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().sound(SoundType.MUD_BRICKS).strength(1.5f, 3f).requiresCorrectToolForDrops());
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(KILN_LIT, false));
 	}
 
