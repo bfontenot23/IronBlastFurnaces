@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ironblastfurnaces:block/copper_blast_furnace"
+    },
+    "facing=east": {
+      "model": "ironblastfurnaces:block/copper_blast_furnace",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ironblastfurnaces:block/copper_blast_furnace",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ironblastfurnaces:block/copper_blast_furnace",
+      "y": 270
+    }
+  }
+}

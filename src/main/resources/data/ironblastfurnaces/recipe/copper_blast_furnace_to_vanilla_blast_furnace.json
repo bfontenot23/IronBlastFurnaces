@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ironblastfurnaces:copper_blast_furnace"
+    }
+  ],
+  "result": {
+    "id": "minecraft:blast_furnace",
+    "count": 1
+  }
+}

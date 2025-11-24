@@ -1,0 +1,18 @@
+{
+  "type": "ironblastfurnaces:copper_blast_furnace_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:deepslate_lapis_ore"
+    }
+  ],
+  "strings": [
+    "100",
+    "0.2"
+  ],
+  "outputs": [
+    {
+      "id": "minecraft:lapis_lazuli",
+      "count": 1
+    }
+  ]
+}

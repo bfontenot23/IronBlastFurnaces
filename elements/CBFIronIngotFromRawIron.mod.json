@@ -1,0 +1,27 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "copper_blast_furnace_smelting",
+    "ingredients": [
+      {
+        "value": "Items.RAW_IRON"
+      }
+    ],
+    "integers": [],
+    "strings": [
+      "200",
+      "0.7"
+    ],
+    "recipetype": "CopperBlastFurnaceSmelting",
+    "results": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

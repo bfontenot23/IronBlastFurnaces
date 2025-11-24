@@ -30,6 +30,7 @@ public class IronblastfurnacesModItems {
 	public static final DeferredItem<Item> COPPER_AXE;
 	public static final DeferredItem<Item> COPPER_HOE;
 	public static final DeferredItem<Item> COPPER_SHOVEL;
+	public static final DeferredItem<Item> COPPER_BLAST_FURNACE;
 	static {
 		KILN = block(IronblastfurnacesModBlocks.KILN);
 		COPPER_PICKAXE = REGISTRY.register("copper_pickaxe", CopperPickaxeItem::new);
@@ -45,6 +46,7 @@ public class IronblastfurnacesModItems {
 		COPPER_AXE = REGISTRY.register("copper_axe", CopperAxeItem::new);
 		COPPER_HOE = REGISTRY.register("copper_hoe", CopperHoeItem::new);
 		COPPER_SHOVEL = REGISTRY.register("copper_shovel", CopperShovelItem::new);
+		COPPER_BLAST_FURNACE = block(IronblastfurnacesModBlocks.COPPER_BLAST_FURNACE);
 	}
 
 	// Start of user code block custom items

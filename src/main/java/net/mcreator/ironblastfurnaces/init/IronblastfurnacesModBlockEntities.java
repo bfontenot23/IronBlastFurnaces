@@ -17,12 +17,14 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.ironblastfurnaces.block.entity.KilnBlockEntity;
+import net.mcreator.ironblastfurnaces.block.entity.CopperBlastFurnaceBlockEntity;
 import net.mcreator.ironblastfurnaces.IronblastfurnacesMod;
 
 @EventBusSubscriber
 public class IronblastfurnacesModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, IronblastfurnacesMod.MODID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<KilnBlockEntity>> KILN = register("kiln", IronblastfurnacesModBlocks.KILN, KilnBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CopperBlastFurnaceBlockEntity>> COPPER_BLAST_FURNACE = register("copper_blast_furnace", IronblastfurnacesModBlocks.COPPER_BLAST_FURNACE, CopperBlastFurnaceBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -33,5 +35,6 @@ public class IronblastfurnacesModBlockEntities {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, KILN.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, COPPER_BLAST_FURNACE.get(), SidedInvWrapper::new);
 	}
 }

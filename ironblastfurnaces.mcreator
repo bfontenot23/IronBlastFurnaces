@@ -1335,6 +1335,466 @@
         ]
       },
       "path": "~/recipes/kiln"
+    },
+    {
+      "name": "CopperBlastFurnace",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_blast_furnace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ironblastfurnaces/blockstates/copper_blast_furnace.json",
+          "src/main/resources/assets/ironblastfurnaces/models/block/copper_blast_furnace.json",
+          "src/main/java/net/mcreator/ironblastfurnaces/block/entity/CopperBlastFurnaceBlockEntity.java",
+          "src/main/resources/data/ironblastfurnaces/loot_table/blocks/copper_blast_furnace.json",
+          "src/main/java/net/mcreator/ironblastfurnaces/block/CopperBlastFurnaceBlock.java",
+          "src/main/resources/assets/ironblastfurnaces/models/item/copper_blast_furnace.json"
+        ]
+      },
+      "path": "~/IronTier"
+    },
+    {
+      "name": "CopperBlastFurnaceGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_blast_furnace_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/network/CopperBlastFurnaceGuiSlotMessage.java",
+          "src/main/java/net/mcreator/ironblastfurnaces/client/gui/CopperBlastFurnaceGuiScreen.java",
+          "src/main/java/net/mcreator/ironblastfurnaces/world/inventory/CopperBlastFurnaceGuiMenu.java"
+        ]
+      },
+      "path": "~/IronTier"
+    },
+    {
+      "name": "CopperBlastFurnaceOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_blast_furnace_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/procedures/CopperBlastFurnaceOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/IronTier"
+    },
+    {
+      "name": "CopperBlastFurnaceSmelting",
+      "type": "jeirecipetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_blast_furnace_smelting",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ironblastfurnaces/jei_recipes/CopperBlastFurnaceSmeltingRecipeCategory.java",
+          "src/main/java/net/mcreator/ironblastfurnaces/jei_recipes/CopperBlastFurnaceSmeltingRecipe.java"
+        ]
+      },
+      "path": "~/recipes/types"
+    },
+    {
+      "name": "IronIngotFromBlastingRawIron",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "iron_ingot_from_blasting_raw_iron",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/iron_ingot_from_blasting_raw_iron.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/blasting"
+    },
+    {
+      "name": "IronIngotFromBlastingIronOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "iron_ingot_from_blasting_iron_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/iron_ingot_from_blasting_iron_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/blasting"
+    },
+    {
+      "name": "IronIngotFromBlastingDeepslateIronOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "iron_ingot_from_blasting_deepslate_iron_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/iron_ingot_from_blasting_deepslate_iron_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/blasting"
+    },
+    {
+      "name": "IronNuggetFromBlasting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "iron_nugget_from_blasting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/iron_nugget_from_blasting.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/blasting"
+    },
+    {
+      "name": "GoldIngotFromBlastingRawGold",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_ingot_from_blasting_raw_gold",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/gold_ingot_from_blasting_raw_gold.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/blasting"
+    },
+    {
+      "name": "GoldIngotFromBlastingGoldOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_ingot_from_blasting_gold_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/gold_ingot_from_blasting_gold_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/blasting"
+    },
+    {
+      "name": "GoldIngotFromBlastingDeepslateGoldOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_ingot_from_blasting_deepslate_gold_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/gold_ingot_from_blasting_deepslate_gold_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/blasting"
+    },
+    {
+      "name": "GoldNuggetFromBlasting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_nugget_from_blasting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/gold_nugget_from_blasting.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/blasting"
+    },
+    {
+      "name": "GoldIngotFromBlastingNetherGoldOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_ingot_from_blasting_nether_gold_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/gold_ingot_from_blasting_nether_gold_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/blasting"
+    },
+    {
+      "name": "DiamondFromBlastingDiamondOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "diamond_from_blasting_diamond_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/diamond_from_blasting_diamond_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/blasting"
+    },
+    {
+      "name": "DiamondFromBlastingDeepslateDiamondOre",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "diamond_from_blasting_deepslate_diamond_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/diamond_from_blasting_deepslate_diamond_ore.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/blasting"
+    },
+    {
+      "name": "NetheriteScrapFromBlasting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "netherite_scrap_from_blasting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/netherite_scrap_from_blasting.json"
+        ]
+      },
+      "path": "~/recipes/vanilla/blasting"
+    },
+    {
+      "name": "VanillaBlastFurnaceToCopperBlastFurnace",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vanilla_blast_furnace_to_copper_blast_furnace",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/vanilla_blast_furnace_to_copper_blast_furnace.json"
+        ]
+      },
+      "path": "~/recipes/crafting"
+    },
+    {
+      "name": "CopperBlastFurnaceToVanillaBlastFurnace",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_blast_furnace_to_vanilla_blast_furnace",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/copper_blast_furnace_to_vanilla_blast_furnace.json"
+        ]
+      },
+      "path": "~/recipes/crafting"
+    },
+    {
+      "name": "CopperBlastFurnaceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_blast_furnace_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/copper_blast_furnace.json",
+          "src/main/resources/data/ironblastfurnaces/advancement/recipes/copper_blast_furnace_recipe.json"
+        ]
+      },
+      "path": "~/recipes/crafting"
+    },
+    {
+      "name": "CBFCopperIngotFromRawCopper",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cbf_copper_ingot_from_raw_copper",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/cbf_copper_ingot_from_raw_copper.json"
+        ]
+      },
+      "path": "~/recipes/copper blast furnace"
+    },
+    {
+      "name": "CBFCopperIngotFromCopperOre",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cbf_copper_ingot_from_copper_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/cbf_copper_ingot_from_copper_ore.json"
+        ]
+      },
+      "path": "~/recipes/copper blast furnace"
+    },
+    {
+      "name": "CBFCopperIngotFromDeepslateCopperOre",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cbf_copper_ingot_from_deepslate_copper_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/cbf_copper_ingot_from_deepslate_copper_ore.json"
+        ]
+      },
+      "path": "~/recipes/copper blast furnace"
+    },
+    {
+      "name": "CBFIronIngotFromRawIron",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cbf_iron_ingot_from_raw_iron",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/cbf_iron_ingot_from_raw_iron.json"
+        ]
+      },
+      "path": "~/recipes/copper blast furnace"
+    },
+    {
+      "name": "CBFIronIngotFromIronOre",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cbf_iron_ingot_from_iron_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/cbf_iron_ingot_from_iron_ore.json"
+        ]
+      },
+      "path": "~/recipes/copper blast furnace"
+    },
+    {
+      "name": "CBFIronIngotFromDeepslateIronOre",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cbf_iron_ingot_from_deepslate_iron_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/cbf_iron_ingot_from_deepslate_iron_ore.json"
+        ]
+      },
+      "path": "~/recipes/copper blast furnace"
+    },
+    {
+      "name": "CBFCoalFromCoalOre",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cbf_coal_from_coal_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/cbf_coal_from_coal_ore.json"
+        ]
+      },
+      "path": "~/recipes/copper blast furnace"
+    },
+    {
+      "name": "CBFCoalFromDeepslateCoalOre",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cbf_coal_from_deepslate_coal_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/cbf_coal_from_deepslate_coal_ore.json"
+        ]
+      },
+      "path": "~/recipes/copper blast furnace"
+    },
+    {
+      "name": "CBFRedstoneFromRedstoneOre",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cbf_redstone_from_redstone_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/cbf_redstone_from_redstone_ore.json"
+        ]
+      },
+      "path": "~/recipes/copper blast furnace"
+    },
+    {
+      "name": "CBFRedstoneFromDeepslateRedstoneOre",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cbf_redstone_from_deepslate_redstone_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/cbf_redstone_from_deepslate_redstone_ore.json"
+        ]
+      },
+      "path": "~/recipes/copper blast furnace"
+    },
+    {
+      "name": "CBFLapisLazuliFromLapisLazuliOre",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cbf_lapis_lazuli_from_lapis_lazuli_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/cbf_lapis_lazuli_from_lapis_lazuli_ore.json"
+        ]
+      },
+      "path": "~/recipes/copper blast furnace"
+    },
+    {
+      "name": "CBFLapisLazuliFromDeepslateLapisLazuliOre",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cbf_lapis_lazuli_from_deepslate_lapis_lazuli_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/cbf_lapis_lazuli_from_deepslate_lapis_lazuli_ore.json"
+        ]
+      },
+      "path": "~/recipes/copper blast furnace"
+    },
+    {
+      "name": "CBFEmeraldFromEmeraldOre",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cbf_emerald_from_emerald_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/cbf_emerald_from_emerald_ore.json"
+        ]
+      },
+      "path": "~/recipes/copper blast furnace"
+    },
+    {
+      "name": "CBFEmeraldFromDeepslateEmeraldOre",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cbf_emerald_from_deepslate_emerald_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ironblastfurnaces/recipe/cbf_emerald_from_deepslate_emerald_ore.json"
+        ]
+      },
+      "path": "~/recipes/copper blast furnace"
     }
   ],
   "variable_elements": [],
@@ -1369,7 +1829,11 @@
       "~CUSTOM:CopperShovel"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:CopperBlastFurnace",
       "~CUSTOM:Kiln"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:CopperBlastFurnace"
     ]
   },
   "tab_element_order": {},
@@ -1394,7 +1858,9 @@
       "item.ironblastfurnaces.copper_sword": "Copper Sword",
       "item.ironblastfurnaces.copper_axe": "Copper Axe",
       "item.ironblastfurnaces.copper_hoe": "Copper Hoe",
-      "item.ironblastfurnaces.copper_shovel": "Copper Shovel"
+      "item.ironblastfurnaces.copper_shovel": "Copper Shovel",
+      "block.ironblastfurnaces.copper_blast_furnace": "Copper Blast Furnace",
+      "gui.ironblastfurnaces.copper_blast_furnace_gui.label_kiln": "Copper Blast Furnace"
     }
   },
   "metadata": {
@@ -1454,11 +1920,19 @@
           {
             "name": "crafting",
             "children": []
+          },
+          {
+            "name": "copper blast furnace",
+            "children": []
           }
         ]
       },
       {
         "name": "FlintTier",
+        "children": []
+      },
+      {
+        "name": "IronTier",
         "children": []
       }
     ]

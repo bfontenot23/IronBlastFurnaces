@@ -12,6 +12,7 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.ironblastfurnaces.jei_recipes.KilnSmeltingRecipe;
+import net.mcreator.ironblastfurnaces.jei_recipes.CopperBlastFurnaceSmeltingRecipe;
 
 @EventBusSubscriber
 public class IronblastfurnacesModRecipeTypes {
@@ -26,6 +27,8 @@ public class IronblastfurnacesModRecipeTypes {
 			SERIALIZERS.register(bus);
 			RECIPE_TYPES.register("kiln_smelting", () -> KilnSmeltingRecipe.Type.INSTANCE);
 			SERIALIZERS.register("kiln_smelting", () -> KilnSmeltingRecipe.Serializer.INSTANCE);
+			RECIPE_TYPES.register("copper_blast_furnace_smelting", () -> CopperBlastFurnaceSmeltingRecipe.Type.INSTANCE);
+			SERIALIZERS.register("copper_blast_furnace_smelting", () -> CopperBlastFurnaceSmeltingRecipe.Serializer.INSTANCE);
 		});
 	}
 }

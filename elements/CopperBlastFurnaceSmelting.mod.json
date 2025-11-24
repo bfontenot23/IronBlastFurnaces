@@ -1,0 +1,74 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "furnace_jei.png",
+    "width": 175,
+    "height": 85,
+    "icon": {
+      "value": "CUSTOM:CopperBlastFurnace"
+    },
+    "craftingtables": [
+      {
+        "value": "CUSTOM:CopperBlastFurnace"
+      }
+    ],
+    "enableCraftingtable": true,
+    "enableIntList": false,
+    "enableStringList": true,
+    "title": "Copper Blast Furnace Smelting",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 53,
+        "y": 17,
+        "slotid": 0
+      },
+      {
+        "type": "OUTPUT",
+        "x": 110,
+        "y": 35,
+        "slotid": 0
+      }
+    ],
+    "components": [
+      {
+        "type": "jei_sprite",
+        "data": {
+          "updateInterval": 10,
+          "sprite": "fuelreverse.png",
+          "spritesCount": 14,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": ""
+          },
+          "x": 180,
+          "y": 144,
+          "locked": false
+        }
+      },
+      {
+        "type": "jei_sprite",
+        "data": {
+          "updateInterval": 10,
+          "sprite": "progressarrow.png",
+          "spritesCount": 23,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": ""
+          },
+          "x": 202,
+          "y": 143,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

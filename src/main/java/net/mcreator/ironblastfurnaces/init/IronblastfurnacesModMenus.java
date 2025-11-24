@@ -16,6 +16,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.ironblastfurnaces.world.inventory.KilnGuiMenu;
+import net.mcreator.ironblastfurnaces.world.inventory.CopperBlastFurnaceGuiMenu;
 import net.mcreator.ironblastfurnaces.network.MenuStateUpdateMessage;
 import net.mcreator.ironblastfurnaces.IronblastfurnacesMod;
 
@@ -24,6 +25,7 @@ import java.util.Map;
 public class IronblastfurnacesModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, IronblastfurnacesMod.MODID);
 	public static final DeferredHolder<MenuType<?>, MenuType<KilnGuiMenu>> KILN_GUI = REGISTRY.register("kiln_gui", () -> IMenuTypeExtension.create(KilnGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<CopperBlastFurnaceGuiMenu>> COPPER_BLAST_FURNACE_GUI = REGISTRY.register("copper_blast_furnace_gui", () -> IMenuTypeExtension.create(CopperBlastFurnaceGuiMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

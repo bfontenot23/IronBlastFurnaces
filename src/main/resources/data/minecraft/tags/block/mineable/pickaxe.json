@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "ironblastfurnaces:copper_blast_furnace",
     "ironblastfurnaces:kiln"
   ]
 }

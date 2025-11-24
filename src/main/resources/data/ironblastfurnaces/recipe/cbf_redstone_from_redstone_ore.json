@@ -1,0 +1,18 @@
+{
+  "type": "ironblastfurnaces:copper_blast_furnace_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone_ore"
+    }
+  ],
+  "strings": [
+    "100",
+    "0.7"
+  ],
+  "outputs": [
+    {
+      "id": "minecraft:redstone",
+      "count": 1
+    }
+  ]
+}

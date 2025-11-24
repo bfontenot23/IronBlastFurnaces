@@ -31,5 +31,6 @@ public class IronblastfurnacesModTabs {
 				tabData.accept(IronblastfurnacesModItems.COPPER_AXE.get());
 				tabData.accept(IronblastfurnacesModItems.COPPER_HOE.get());
 				tabData.accept(IronblastfurnacesModItems.COPPER_SHOVEL.get());
+				tabData.accept(IronblastfurnacesModBlocks.COPPER_BLAST_FURNACE.get().asItem());
 			}).build());
 }

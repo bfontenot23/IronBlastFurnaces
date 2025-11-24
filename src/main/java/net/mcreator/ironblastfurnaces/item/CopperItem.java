@@ -31,9 +31,9 @@ public abstract class CopperItem extends ArmorItem {
 				map.put(ArmorItem.Type.BOOTS, 1);
 				map.put(ArmorItem.Type.LEGGINGS, 3);
 				map.put(ArmorItem.Type.CHESTPLATE, 4);
-				map.put(ArmorItem.Type.HELMET, 1);
+				map.put(ArmorItem.Type.HELMET, 2);
 				map.put(ArmorItem.Type.BODY, 4);
-			}), 13, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_iron")), () -> Ingredient.of(new ItemStack(Items.COPPER_INGOT)),
+			}), 8, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_iron")), () -> Ingredient.of(new ItemStack(Items.COPPER_INGOT)),
 					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("ironblastfurnaces:copper"))), 0f, 0f);
 			registerHelper.register(ResourceLocation.parse("ironblastfurnaces:copper"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
@@ -46,25 +46,25 @@ public abstract class CopperItem extends ArmorItem {
 
 	public static class Helmet extends CopperItem {
 		public Helmet() {
-			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(12)));
+			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(11)));
 		}
 	}
 
 	public static class Chestplate extends CopperItem {
 		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(12)));
+			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(11)));
 		}
 	}
 
 	public static class Leggings extends CopperItem {
 		public Leggings() {
-			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(12)));
+			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(11)));
 		}
 	}
 
 	public static class Boots extends CopperItem {
 		public Boots() {
-			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(12)));
+			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(11)));
 		}
 	}
 }

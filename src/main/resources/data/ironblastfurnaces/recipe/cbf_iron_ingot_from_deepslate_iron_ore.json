@@ -1,0 +1,18 @@
+{
+  "type": "ironblastfurnaces:copper_blast_furnace_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:deepslate_iron_ore"
+    }
+  ],
+  "strings": [
+    "200",
+    "0.7"
+  ],
+  "outputs": [
+    {
+      "id": "minecraft:iron_ingot",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "copper_blast_furnace_smelting",
+    "ingredients": [
+      {
+        "value": "Blocks.REDSTONE_ORE"
+      }
+    ],
+    "integers": [],
+    "strings": [
+      "100",
+      "0.7"
+    ],
+    "recipetype": "CopperBlastFurnaceSmelting",
+    "results": [
+      {
+        "value": "Items.REDSTONE"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

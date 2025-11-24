@@ -1,0 +1,27 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "copper_blast_furnace_smelting",
+    "ingredients": [
+      {
+        "value": "Blocks.DEEPSLATE_EMERALD_ORE"
+      }
+    ],
+    "integers": [],
+    "strings": [
+      "100",
+      "1.0"
+    ],
+    "recipetype": "CopperBlastFurnaceSmelting",
+    "results": [
+      {
+        "value": "Items.EMERALD"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

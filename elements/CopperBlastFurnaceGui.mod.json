@@ -1,0 +1,133 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_kiln",
+          "text": {
+            "fixedValue": "Copper Blast Furnace"
+          },
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "x": 163,
+          "y": 41,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bigslot.png",
+          "use1Xscale": false,
+          "x": 231,
+          "y": 67,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "progressarrow.png",
+          "spritesCount": 23,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "ProgressLevelIndicator"
+          },
+          "x": 203,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "fuel.png",
+          "spritesCount": 14,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "FuelLevelIndicator"
+          },
+          "x": 181,
+          "y": 73,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 178,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 178,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "ReleaseStoredExp"
+          },
+          "onStackTransfer": {
+            "name": "ReleaseStoredExp"
+          },
+          "x": 235,
+          "y": 71,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 12,
+      "oy": 33,
+      "snapOnGrid": false
+    }
+  }
+}

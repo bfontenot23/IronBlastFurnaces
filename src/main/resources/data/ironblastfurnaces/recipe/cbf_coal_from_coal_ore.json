@@ -1,0 +1,18 @@
+{
+  "type": "ironblastfurnaces:copper_blast_furnace_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:coal_ore"
+    }
+  ],
+  "strings": [
+    "100",
+    "0.1"
+  ],
+  "outputs": [
+    {
+      "id": "minecraft:coal",
+      "count": 1
+    }
+  ]
+}

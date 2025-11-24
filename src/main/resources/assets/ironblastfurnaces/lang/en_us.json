@@ -18,5 +18,7 @@
   "item.ironblastfurnaces.copper_sword": "Copper Sword",
   "item.ironblastfurnaces.copper_axe": "Copper Axe",
   "item.ironblastfurnaces.copper_hoe": "Copper Hoe",
-  "item.ironblastfurnaces.copper_shovel": "Copper Shovel"
+  "item.ironblastfurnaces.copper_shovel": "Copper Shovel",
+  "block.ironblastfurnaces.copper_blast_furnace": "Copper Blast Furnace",
+  "gui.ironblastfurnaces.copper_blast_furnace_gui.label_kiln": "Copper Blast Furnace"
 }
